@@ -8,7 +8,11 @@ class ItemsController < ApplicationController
   end
 
   def create
-    @item = Item.new(name: item_params[:name], price: item_params[:price], user_id: current_user.id)
+    @item = Item.create(name: item_params[:name], price: item_params[:price], user_id: current_user.id)
+  end
+
+  def show
+    @item = Item.find_by(id: params[:id])
   end
 
   def move_to_index

@@ -1,3 +1,4 @@
 <% @user.items.each do |item| %>
   <p><%= item.name %>:<%= item.price %></p>
+  <%= link_to "詳細", item_path(item.id) %>
 <% end %>
