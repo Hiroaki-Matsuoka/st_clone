@@ -1,7 +1,10 @@
 <h1>所有機材一覧</h1>
 <% if user_signed_in? %>
   <% @items.each do |item| %>
-    <p><%= item.name %>: ¥<%= item.price %>:Owner: <%= item.user.id %></p>
+  <div class="user-show">
+    <p><%= item.name %>: ¥<%= item.price %></p>
+    <p>Owner: <%= item.user.user_name %></p>
+  </div>
   <% end %>
 <% else %>
   <p>ログインしてください</p>
