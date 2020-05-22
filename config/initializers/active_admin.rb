@@ -6,12 +6,6 @@ ActiveAdmin.setup do |config|
   #
   config.site_title = "Strava"
 
-  # ActiveAdminの設定で、読み込むアセットを一旦全部リセットして、特定のものだけ登録
-  config.clear_stylesheets!
-  config.register_stylesheet "admin/active_admin.css"
-  config.clear_javascripts!
-  config.register_javascript "admin/active_admin.js"
-
   # Set the link url for the title. For example, to take
   # users to your main site. Defaults to no link.
   #
