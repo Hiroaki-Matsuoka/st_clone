@@ -261,6 +261,7 @@ DEPENDENCIES
   capybara (>= 2.15)
   devise
   jbuilder (~> 2.7)
+  jquery-ui-rails
   listen (~> 3.2)
   pry-byebug
   pry-doc
