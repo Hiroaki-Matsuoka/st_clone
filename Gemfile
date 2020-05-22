@@ -3,7 +3,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.6.5'
 
-gem 'rails', '~> 6.0.3', '>= 6.0.3.1'
+gem 'rails', '~> 5.2.0'
 gem 'sqlite3', '~> 1.4'
 gem 'puma', '~> 4.1'
 gem 'sass-rails', '>= 6'
@@ -15,6 +15,7 @@ gem 'pry-byebug'
 gem 'pry-doc'
 gem 'pry-rails'
 gem 'devise'
+gem 'activeadmin'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
